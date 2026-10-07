@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bruma Café — Café de especialidad en Lleida</title>
+  <meta name="description" content="Bruma Café. Café de especialidad, brunch y repostería en el centro de Lleida. Un lugar para disfrutar, compartir y bajar el ritmo.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#24231f">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph. Añade la URL final de GitHub Pages cuando publiques el proyecto. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bruma Café — Café de especialidad en Lleida">
+  <meta property="og:description" content="Donde un café se convierte en un momento. Café de especialidad, brunch y repostería.">
+  <meta property="og:site_name" content="Bruma Café">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Datos estructurados: negocio ficticio de portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Bruma Café",
+    "description": "Café de especialidad, brunch y repostería.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer de la Bruma, 18",
+      "addressLocality": "Lleida",
+      "addressRegion": "Catalunya",
+      "addressCountry": "ES"
+    },
+    "servesCuisine": ["Café de especialidad", "Brunch", "Repostería"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="#inicio" class="brand" aria-label="Bruma Café - Inicio">
+      <span class="brand-symbol" aria-hidden="true">B</span>
+      <span class="brand-name">BRUMA<small>CAFÉ</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#carta">Carta</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a href="#reserva" class="header-button">Reservar mesa</a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-label="Menú móvil">
+    <a href="#carta">Carta</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#reserva" class="mobile-reserve">Reservar mesa</a>
+  </div>
+
+  <main id="inicio">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">CAFÉ DE ESPECIALIDAD · BRUNCH · REPOSTERÍA</p>
+        <h1 id="hero-title">Donde un café<br>se convierte<br>en <em>un momento.</em></h1>
+        <p class="hero-text">Un lugar para disfrutar de un café de especialidad, compartir tiempo y bajar el ritmo.</p>
+        <div class="hero-actions">
+          <a href="#reserva" class="button button-dark">Reservar mesa <span>→</span></a>
+          <a href="#carta" class="text-link">Descubrir la carta <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=85"
+          alt="Café de especialidad preparado en Bruma Café"
+          width="1200"
+          height="1500"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Lo que define a Bruma">
+      <div><strong>Café de especialidad</strong><span>Seleccionado con mimo</span></div>
+      <div><strong>Producto local</strong><span>Pequeños productores</span></div>
+      <div><strong>Reserva online</strong><span>En menos de un minuto</span></div>
+    </section>
+
+    <section class="intro" id="nosotros" aria-labelledby="intro-title">
+      <div class="section-number">01 / NUESTRA FILOSOFÍA</div>
+      <div class="intro-content">
+        <h2 id="intro-title">Café de alta calidad.<em>Hecho sin prisa.</em></h2>
+        <div class="intro-copy">
+          <p>Bruma nace para convertir una pausa cualquiera en un momento que merece la pena disfrutar.</p>
+          <p>Trabajamos con café de alta calidad, producto local y una carta que cambia con las estaciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation" id="reserva" aria-labelledby="reservation-title">
+      <div class="reservation-intro">
+        <p class="eyebrow">¿NOS VEMOS?</p>
+        <h2 id="reservation-title">Guarda<br>tu <em>mesa.</em></h2>
+        <p>Tu próxima pausa empieza aquí. Reserva tu mesa y disfruta de un café, algo rico y un momento para ti.</p>
+        <div class="reservation-note"><span aria-hidden="true">✓</span>Reserva online en menos de un minuto.</div>
+      </div>
+
+      <div class="booking-card">
+        <div class="booking-header"><span>RESERVA ONLINE</span><span class="booking-status">● Disponible</span></div>
+
+        <form id="bookingForm">
+          <div class="form-row">
+            <label>Fecha<input type="date" id="date" name="date" required></label>
+            <label>Hora
+              <select id="time" name="time" required>
+                <option value="">Selecciona</option>
+                <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option>
+                <option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option>
+                <option>13:00</option><option>13:30</option><option>14:00</option><option>17:00</option>
+                <option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option>
+                <option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Personas
+            <select id="people" name="people" required>
+              <option value="">Selecciona</option>
+              <option>1 persona</option><option>2 personas</option><option>3 personas</option><option>4 personas</option>
+              <option>5 personas</option><option>6 personas</option><option>7 personas</option><option>8 personas</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <label>Nombre<input type="text" id="name" name="name" placeholder="Tu nombre" autocomplete="name" required></label>
+            <label>Teléfono<input type="tel" id="phone" name="phone" placeholder="600 000 000" autocomplete="tel" required></label>
+          </div>
+
+          <label>Email<input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" required></label>
+
+          <label>Algo que debamos saber <span class="optional">Opcional</span>
+            <textarea id="message" name="message" rows="3" placeholder="Cumpleaños, carrito de bebé, alergias..."></textarea>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" required>
+            <span>Acepto que Bruma Café utilice mis datos para gestionar esta reserva.</span>
+          </label>
+
+          <button type="submit" class="button button-dark button-full">Solicitar reserva <span>→</span></button>
+          <p class="form-small">Demo de portfolio · En una web real se conectaría con el sistema de reservas del negocio.</p>
+        </form>
+
+        <div class="booking-success" id="bookingSuccess" role="status" aria-live="polite" hidden>
+          <div class="success-icon" aria-hidden="true">✓</div>
+          <h3>Solicitud recibida.</h3>
+          <p>Esta es una demostración del flujo de reserva. En una web real, aquí se confirmaría la disponibilidad del restaurante.</p>
+          <button class="text-link" id="newReservation" type="button">Hacer otra reserva →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="carta" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PARA EMPEZAR</p>
+          <h2 id="menu-title">La carta</h2>
+        </div>
+        <p>Una selección cuidada para empezar el día, compartir algo rico o simplemente disfrutar de tu momento.</p>
+      </div>
+
+      <div class="menu-list">
+        <article class="menu-item"><div class="menu-number">01</div><div class="menu-info"><h3>Flat White</h3><p>Espresso doble · leche texturizada</p></div><strong>3,40 €</strong></article>
+        <article class="menu-item"><div class="menu-number">02</div><div class="menu-info"><h3>Brunch Bruma</h3><p>Tostada · huevos · crema · fruta</p></div><strong>13,90 €</strong></article>
+        <article class="menu-item"><div class="menu-number">03</div><div class="menu-info"><h3>Roll de temporada</h3><p>Repostería casera · receta de temporada</p></div><strong>4,20 €</strong></article>
+        <article class="menu-item"><div class="menu-number">04</div><div class="menu-info"><h3>Cold Brew</h3><p>Café de especialidad · servido frío</p></div><strong>4,50 €</strong></article>
+      </div>
+
+      <div class="menu-cta"><a href="#reserva" class="button button-outline">Ven a probarlo <span>→</span></a></div>
+    </section>
+
+    <section class="experience" id="experiencia" aria-labelledby="experience-title">
+      <div class="experience-image">
+        <img
+          src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=85"
+          alt="Interior acogedor de Bruma Café"
+          width="1200"
+          height="1500"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <div class="experience-content">
+        <p class="eyebrow">LA EXPERIENCIA</p>
+        <h2 id="experience-title">Una pausa<br>que <em>se queda.</em></h2>
+        <p>Luz natural, música tranquila y espacio para desayunar, trabajar o simplemente no hacer nada durante un rato.</p>
+
+        <div class="experience-points">
+          <div><span>01</span><strong>Wi-Fi rápido</strong><small>Y mesas cómodas.</small></div>
+          <div><span>02</span><strong>Producto local</strong><small>Cada semana seleccionamos lo mejor.</small></div>
+          <div><span>03</span><strong>Pet friendly</strong><small>Tu compañero también es bienvenido.</small></div>
+        </div>
+
+        <a href="#reserva" class="button button-light">Reservar mesa <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="quote" aria-label="Manifiesto de Bruma">
+      <div>
+        <p>“El sitio al que<br>vienes por el café,<br>vuelves por cómo<br>te hace sentir.”</p>
+        <span>— BRUMA CAFÉ</span>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <p class="eyebrow">TU PRÓXIMA PAUSA</p>
+      <h2 id="final-title">¿Nos vemos<br>en Bruma?</h2>
+      <a href="#reserva" class="button button-dark">Reservar mesa <span>→</span></a>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-title">
+        <p class="eyebrow">NOS ENCONTRAMOS</p>
+        <h2 id="contact-title">Nos encontramos<br><em>en el centro.</em></h2>
+      </div>
+
+      <div class="contact-info">
+        <div>
+          <span>Dirección</span>
+          <strong>Carrer de la Bruma, 18<br>Lleida · Catalunya</strong>
+          <span class="demo-label">Ubicación ficticia · Demo</span>
+        </div>
+        <div>
+          <span>Horario</span>
+          <strong>Lun–Vie · 08:00–20:00<br>Sáb–Dom · 09:00–20:30</strong>
+        </div>
+        <div>
+          <span>Contacto</span>
+          <strong>hola@brumacafe.com<br>973 00 00 00</strong>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#reserva" class="mobile-booking-bar" aria-label="Ir a reservar mesa">
+    <span>Reservar mesa</span><span>→</span>
+  </a>
+
+  <footer>
+    <a href="#inicio" class="brand" aria-label="Volver al inicio">
+      <span class="brand-symbol" aria-hidden="true">B</span>
+      <span class="brand-name">BRUMA<small>CAFÉ</small></span>
+    </a>
+    <p>© 2026 Bruma Café · Proyecto conceptual</p>
+    <a href="#reserva">Reservar mesa ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
